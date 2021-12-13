@@ -1,0 +1,15 @@
+<html> <head>
+<title>Your Order Info</title> </head>
+<body onload="handle_load">
+<span>Product Information:</span>
+<div>
+<span>Product Name:
+shoes</span>
+<span>Price: $83.00</span> <span>Discount:
+-$10.00</span> </div>
+<div>
+<span>Product Name:
+shirt</span>
+<span>Price: $15.00</span>
+</div> </body>
+</html>

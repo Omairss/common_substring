@@ -1,0 +1,5 @@
+<html> <head>
+<title>Your Order Info</title> </head>
+<body onload="load_js">
+<span>Product Information:</span>
+</body> </html>
