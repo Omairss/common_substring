@@ -4,12 +4,12 @@
 <span>Product Information:</span>
 <div>
 <span>Product Name:
-shoes</span>
-<span>Price: $83.00</span> <span>Discount:
--$10.00</span> </div>
+shirt</span>
+<span>Price: $92.00</span> <span>Discount:
+-$20.00</span> </div>
 <div>
 <span>Product Name:
-shirt</span>
+knife</span>
 <span>Price: $15.00</span>
 </div> </body>
 </html>
