@@ -48,7 +48,7 @@ class Template():
 
 		'''This method will generate common tokens for every pair. 
 		The result is fed back into the queue and aggregated with another result
-		and so on and so forth. This happens in log(n) time
+		and so on and so forth. This happens in O(log(n)) time
 		where n = number of files.''' 
 
 		while len(self.pairs) > 1:
@@ -59,7 +59,7 @@ class Template():
 			name1 = self.pair_names.popleft()
 
 			_len, common_token = self.longest_common_subsequence(file0, file1)
-			print(f'\n{name0, name1} \n {word_tokenize(common_token)}')
+			#print(f'\n{name0, name1} \n {word_tokenize(common_token)}')
 			text0 = word_tokenize(common_token)
 			self.pairs.append(text0)
 			self.pair_names.append(' '.join([name0, name1]))
@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
 	parser = argparse.ArgumentParser(description='Get common template across files')
 	parser.add_argument('input_files', metavar='<filenames>', type=str, nargs='+',
-                    help='a file in /data as the input')
+                    help='Add files in /data as the input. Ex <filename1.txt> <filename2.txt> ..')
 
 	args = parser.parse_args()
 
