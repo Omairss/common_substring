@@ -4,6 +4,7 @@ import argparse
 import collections
 from ordered_set import OrderedSet as oset
 from nltk.tokenize import word_tokenize
+from nltk.data import find
 
 
 class Template():
@@ -78,6 +79,14 @@ if __name__ == '__main__':
 
 	input_files = args.input_files
 	data_dir = '../data'
+
+	## Download NLTK tokenization package. Tokenization takes care
+	## of splitting tokens from sentences.
+	try:
+		find('tokenizers/punkt')
+	except LookupError:
+		import nltk
+		nltk.download('punkt')
 
 	if len(input_files) != 0:
 		template = Template()
