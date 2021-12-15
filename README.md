@@ -7,6 +7,14 @@ I decided to run the algorithm on tokens instead of characters. This should boos
 Last, the templates are extracted from files in a pairwise manner, 
 hierarchically, allowing a time complexity of O(log(len(files)). (as in merge sort)
 
+## How To Run
+Please run the following on your terminal:
+$ cd <path_to_project>/common_substring
+$ pip install -r requirements.txt 
+$ cd src
+$ python template_finder.py file1.txt file3.txt
+
+
 ## Time complexity
 
 ### Time complexity of methods
