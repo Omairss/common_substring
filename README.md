@@ -9,10 +9,10 @@ hierarchically, allowing a time complexity of O(log(len(files)). (as in merge so
 
 ## How To Run
 Please run the following on your terminal:
-$ cd <path_to_project>/common_substring
-$ pip install -r requirements.txt 
-$ cd src
-$ python template_finder.py file1.txt file3.txt
+$ cd <path_to_project>/common_substring  
+$ pip install -r requirements.txt  
+$ cd src  
+$ python template_finder.py file1.txt file3.txt  
 
 
 ## Time complexity
